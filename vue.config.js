@@ -1,5 +1,3 @@
 module.exports = {
-  baseUrl: process.env.NODE_ENV === 'production'
-    ? '/Vue-Blog/'
-    : '/'
-}
+  publicPath: process.env.NODE_ENV === "production" ? "/blog-client/" : "/"
+};
