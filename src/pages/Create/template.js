@@ -9,7 +9,7 @@ export default {
       content: '',
       atIndex: false,
       titleMax: 20,
-      descriptMax: 100,
+      descriptionMax: 100,
       contentLength: 0
     }
   },
@@ -37,10 +37,10 @@ export default {
         this.$message.warning("字数太多了哦")
       }
     },
-    descriptInput() {
+    descriptionInput() {
       var txtVal = this.description.length
-      this.descriptMax = 100 - txtVal
-      if (this.descriptMax === 0) {
+      this.descriptionMax = 100 - txtVal
+      if (this.descriptionMax === 0) {
         this.$message.warning("字数太多了哦")
       }
     },
